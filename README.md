@@ -8,4 +8,4 @@ se network development framework
 ![main.tmx screenshot](https://github.com/se-looper/tiled-for-delphi/tree/master/screenshots/main.png)
 
 # desert.tmx(desert.tsx)
-![main.tmx screenshot](https://github.com/se-looper/tiled-for-delphi/tree/master/screenshots/desert.png)
+![desert.tmx screenshot](https://github.com/se-looper/tiled-for-delphi/tree/master/screenshots/desert.png)
