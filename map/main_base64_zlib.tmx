@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="212" height="20" tilewidth="16" tileheight="16" infinite="0" backgroundcolor="#0066CC" nextobjectid="24">
+ <tileset firstgid="1" name="tileSet-hd" tilewidth="16" tileheight="16" tilecount="256" columns="16">
+  <image source="map\tileSet.png" trans="#fe80fe" width="256" height="256"/>
+ </tileset>
+ <layer name="background" width="212" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt19dSFEEUgOE1oKiYQDGhmEWMqChBUcxZQcWIVUbMVQgiKlClYkQvMMcL0BcwPKD/XGjh1jA7sz0z3bt9/qrvjp09vbN0zyYSkiRJkiRJkiSF0XP04AVeWvTekr/kHgXrEz7jC75a9N6Sv+QeSQPrQz++4bvmWdItG9ZgQnLWqvcDP/ELvzXPkm7ZsAYTkrNWsiWbz2Bb1m7q88EQDMUwDEcORmAkcjFK32j/CvrZhXUGm3rPvLLl+cPU54OJyEcBJmEyCjEFUzEtwLWi2ht1fXam3jMp/aI+v+dgLuZhPhZgIRahBIsDXMuWvdErW563MrWov6NlWIXVWINyrMU6VKAygvfM5mRPsbtabMYWbMU2bMcO7MSuQV6Xh7EYF8OM2Vym/EaTc9dfdajHIRzGETTgKI7huMtrZqAIMzELxbFMGk6jMSbx/34wXuM8mfIbTc5df53BWZzDeVzARTThEi4n/X0plmAplmE5VmBlTPOqNj3hvh/M9vHaEziJU2jE6WhGdG2wfWBCgGvonN9JdQ1e88e1tlRraMZNtKAVt9CG22jHnaTrVaEa67EBNdiITT7nGbhmHansB1dwFddwHTcimtEtlX3gbzrnd1Jdg9f8ca0t1Rru4wEeohuP8BhP8BTPkq63G3uwF/uwHwdw0Mcsuu+nk8p+cBf30IFOdEUzomthPBfonN9JdQ1e88e1tlRr6MUrvMYbvMU7vMcHfEy6nsr/k+776ZSp86s+Fzjp/vxV12DC+RTGfZD0p7IPmJLqGkw4n8K+D38A4ca3xw==
+  </data>
+ </layer>
+ <imagelayer name="embed" offsetx="770" offsety="-98">
+  <image source="map\replay.png" trans="0ac81e" width="180" height="66"/>
+ </imagelayer>
+ <layer name="walls" width="212" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1+ENgyAQhmE2bTdoN4AJ7Mr1hySEchwIisX3SS61USgl9yVoDAAAAAAAAAAAAAAAAPZwoxdwko9S0rOu4Tdrx0rr8ffcVqn7s7FbAWhjDXkCerCGPJ3BjV4ADhdn6cp5ctF3fx4PP0d7rPXsOF+P/+aUuXPPS9fxPKWkdyvPCteauHf39HH4vrlnv1NZunKejqJloCYjr7Xejeu5q1QmSvox1btn97KUpZnyVJoDLQM1GVm2Qp1cJnI9KfWuNrb1HBGOz2VppjyV5kDLQE1GyFO9kkyk+jLXu9rY1nOEH69l6cg8LdRP9dgb9rjvflL/W16POVrnmaHutA9faJk07A==
+  </data>
+ </layer>
+ <layer name="hazards" width="212" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt2TkKADAIBED/X+XJadJHyCVhBgQbFWw3AgAAAAAAAAD+1kYBAAAAAABwx2o2k5m/kQHN9p+43xL9rv0Vvcj2qv8EALI6v9wIcQ==
+  </data>
+ </layer>
+ <objectgroup name="actions">
+  <object id="2" x="255.5" y="224.5" width="15.5" height="15">
+   <properties>
+    <property name="click" value="800001.action"/>
+    <property name="collision" value="900001.action"/>
+   </properties>
+  </object>
+  <object id="4" x="320.25" y="224" width="15.5" height="15">
+   <properties>
+    <property name="collision" value="900002.action"/>
+   </properties>
+  </object>
+  <object id="5" x="336.25" y="224" width="15.5" height="15">
+   <properties>
+    <property name="collision" value="900001.action"/>
+   </properties>
+  </object>
+  <object id="6" x="368.75" y="224" width="15.5" height="15">
+   <properties>
+    <property name="collision" value="900001.action"/>
+   </properties>
+  </object>
+  <object id="7" x="352.25" y="224" width="15.5" height="15">
+   <properties>
+    <property name="collision" value="900002.action"/>
+   </properties>
+  </object>
+  <object id="8" x="385.25" y="223.5" width="15.5" height="15">
+   <properties>
+    <property name="collision" value="900002.action"/>
+   </properties>
+  </object>
+  <object id="9" x="352.25" y="159.5" width="15.5" height="15">
+   <properties>
+    <property name="collision" value="900001.action"/>
+   </properties>
+  </object>
+  <object id="10" x="1024.25" y="208" width="15.5" height="15">
+   <properties>
+    <property name="collision" value="900001.action"/>
+   </properties>
+  </object>
+  <object id="11" x="432.75" y="280.5" width="15.5" height="7.5">
+   <properties>
+    <property name="collision" value="900003.action"/>
+   </properties>
+  </object>
+  <object id="12" x="688.25" y="280.75" width="15.5" height="7.5">
+   <properties>
+    <property name="collision" value="900003.action"/>
+   </properties>
+  </object>
+  <object id="13" x="831.75" y="280.25" width="31.5" height="7.5">
+   <properties>
+    <property name="collision" value="900003.action"/>
+   </properties>
+  </object>
+  <object id="14" x="107.5" y="156.5" width="71.5" height="38">
+   <properties>
+    <property name="movespeed" value="0.35"/>
+   </properties>
+  </object>
+  <object id="15" x="240.5" y="64.25" width="63" height="31.5">
+   <properties>
+    <property name="movespeed" value="0.45"/>
+   </properties>
+  </object>
+  <object id="17" x="464.5" y="143.75" width="63" height="31.5">
+   <properties>
+    <property name="movespeed" value="0.45"/>
+   </properties>
+  </object>
+  <object id="18" x="181" y="286" width="75" height="33">
+   <properties>
+    <property name="collision" value="100001.action"/>
+   </properties>
+  </object>
+  <object id="19" x="501.5" y="286.5" width="75" height="33">
+   <properties>
+    <property name="collision" value="100002.action"/>
+   </properties>
+  </object>
+  <object id="20" x="196" y="247">
+   <point/>
+  </object>
+  <object id="21" x="404" y="196" width="67" height="21">
+   <ellipse/>
+  </object>
+  <object id="22" x="566" y="115">
+   <polygon points="0,0 -7,45 18,45 44,23"/>
+  </object>
+  <object id="23" x="631" y="194">
+   <polyline points="0,0 72,46 106,13 58,3 98,-26 129,10"/>
+  </object>
+ </objectgroup>
+</map>
