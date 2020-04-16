@@ -1,6 +1,5 @@
 # tiled-for-delphi
 
-# se-framework
 se network development framework
 
 欢迎加入QQ群交流：535027540
