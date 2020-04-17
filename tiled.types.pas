@@ -121,6 +121,7 @@ type
       property Primitive: TTileObjectPrimitive read FPrimitive write FPrimitive;
       property Properties: TPropertyList read FProperties;
     end;
+    TTiledObjectList = class(TObjectList<TTiledObject>);
 
 {
   <animation>
@@ -181,13 +182,14 @@ type
 }
     TObjectGroupLayer = class(TLayer)
     private
-      FObjects: TObjectList<TTiledObject>;
+      FObjects: TTiledObjectList;
       FDrawOrder: TObjectsDrawOrder;
     public
       constructor Create;
       destructor Destroy; override;
 
       property DrawOrder: TObjectsDrawOrder read FDrawOrder write FDrawOrder;
+      property Objects: TTiledObjectList read FObjects;
     end;
 
 {
@@ -444,7 +446,7 @@ begin
     Result:= TStaggerIndex.siEven;
 end;
 
-{ TTiled.TEmbeddedImage }
+{ TTiled.TImage }
 
 constructor TTiled.TImage.Create;
 begin
@@ -514,7 +516,8 @@ end;
 
 constructor TTiled.TObjectGroupLayer.Create;
 begin
-  FObjects:= TObjectList<TTiledObject>.Create;
+  inherited Create;
+  FObjects:= TTiledObjectList.Create;
 end;
 
 destructor TTiled.TObjectGroupLayer.Destroy;
@@ -527,6 +530,7 @@ end;
 
 constructor TTiled.TImageLayer.Create;
 begin
+  inherited Create;
   FImage:= TImage.Create;
 end;
 

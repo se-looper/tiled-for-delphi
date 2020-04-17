@@ -366,6 +366,7 @@ begin
           LObject.SetPoints(LObjectNode.Elements[J].ReadAttribute('points', ''));
         end;
       end;
+      ALayer.Objects.Add(LObject);
     end;
   end;
 end;
